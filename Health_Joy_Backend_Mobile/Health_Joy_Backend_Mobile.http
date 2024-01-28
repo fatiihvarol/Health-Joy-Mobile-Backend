@@ -1,0 +1,6 @@
+@Health_Joy_Backend_Mobile_HostAddress = http://localhost:5090
+
+GET {{Health_Joy_Backend_Mobile_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
