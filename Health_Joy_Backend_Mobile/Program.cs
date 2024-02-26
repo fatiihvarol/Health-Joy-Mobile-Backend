@@ -1,4 +1,3 @@
-
 using Health_Joy_Mobile_Backend.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,13 +9,18 @@ builder.Services.AddSwaggerGen();
 
 string connection = builder.Configuration.GetConnectionString("MsSqlConnection");
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connection));
-var app = builder.Build();
 
 // CORS politikalarını etkinleştir
-app.UseCors(options => options
-    .AllowAnyOrigin()
-    .AllowAnyMethod()
-    .AllowAnyHeader());
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins",
+        builder =>
+        {
+            builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+        });
+});
+
+var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -27,10 +31,12 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+// Enable CORS before UseAuthorization
+app.UseCors("AllowAllOrigins");
+//app.UseCors((g) => g.AllowAnyOrigin());
+
 app.UseAuthorization();
 
 app.MapControllers();
-
-app.UseCors();
 
 app.Run();
