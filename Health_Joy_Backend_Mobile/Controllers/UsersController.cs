@@ -54,6 +54,27 @@ namespace Health_Joy_Backend_Mobile.Controllers
                 return StatusCode(500, "Internal Server Error");
             }
         }
+        
+        [HttpPost("Login")]
+        public async Task<IActionResult> Login(string email,string password)
+        {
+            try
+            {
+                var user = await _context.Users.Where(x => x.Email == email)
+                    .Where(x => x.Password == password)
+                    .FirstOrDefaultAsync();
+                
+                if (user == null)
+                    return NotFound();
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine($"Error fetching user by id: {ex}");
+                return StatusCode(500, "Internal Server Error");
+            }
+        }
 
         [HttpPost]
         public async Task<IActionResult> Register([FromBody] UserRequest userRequest)
@@ -67,7 +88,16 @@ namespace Health_Joy_Backend_Mobile.Controllers
                 {
                     if (userRequest.Password != userRequest.ConfirmPassword)
                     {
-                        ModelState.AddModelError("ConfirmPassword", "Passwords do not match");
+                        ModelState.AddModelError("Message", "Passwords do not match");
+                        return BadRequest(ModelState);
+                    }
+
+                    var fromDb = await _context.Users.Where(x => x.Email == userRequest.Email)
+                        .FirstOrDefaultAsync();
+
+                    if (fromDb is not null)
+                    {
+                        ModelState.AddModelError("Message", "Email already taken");
                         return BadRequest(ModelState);
                     }
 
