@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Health_Joy_Backend_Mobile.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240204115848_UpdateDatabase")]
-    partial class UpdateDatabase
+    [Migration("20240226152154_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
