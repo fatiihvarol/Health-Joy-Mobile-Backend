@@ -3,11 +3,7 @@ using Health_Joy_Mobile_Backend.Data.Entity;
 using Health_Joy_Mobile_Backend.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace Health_Joy_Backend_Mobile.Controllers
 {
@@ -54,16 +50,16 @@ namespace Health_Joy_Backend_Mobile.Controllers
                 return StatusCode(500, "Internal Server Error");
             }
         }
-        
+
         [HttpPost("Login")]
-        public async Task<IActionResult> Login(string email,string password)
+        public async Task<IActionResult> Login(string email, string password)
         {
             try
             {
                 var user = await _context.Users.Where(x => x.Email == email)
                     .Where(x => x.Password == password)
                     .FirstOrDefaultAsync();
-                
+
                 if (user == null)
                     return NotFound();
 
