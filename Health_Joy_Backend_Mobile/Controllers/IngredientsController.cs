@@ -34,6 +34,35 @@ namespace Health_Joy_Backend_Mobile.Controllers
         }
 
 
+        [HttpPost("CalculateAverageRiskLevel")]
+        public async Task<IActionResult> CalculateAverageRiskLevelAsync([FromBody] IngredientRequest[] incomingArray)
+        {
+
+            if (incomingArray == null || incomingArray.Length == 0)
+                return BadRequest("Incoming array is null or empty.");
+
+            IngredientRequest[] ingredients = new IngredientRequest[incomingArray.Length];
+            IngredientRequest tempIngredient = new IngredientRequest();
+            int totalRiskLevel = 0;
+            int avarageTotalRiskLevel = 0;
+
+            for (int i = 0; i < incomingArray.Length; i++)
+            {
+                var element = await _context.Ingredients.FindAsync(incomingArray[i].Name);
+                if (element is not null)
+                {
+                    tempIngredient.Name = element.Name;
+                    tempIngredient.RiskLevel = element.RiskLevel;
+                    ingredients[i] = tempIngredient;
+                    totalRiskLevel += element.RiskLevel;
+                }
+            }
+            avarageTotalRiskLevel = totalRiskLevel / incomingArray.Length;
+
+            return Ok(avarageTotalRiskLevel);
+        }
+
+
         [HttpGet("{id}")]
         public async Task<IActionResult> GetIngredientById(int id)
         {
