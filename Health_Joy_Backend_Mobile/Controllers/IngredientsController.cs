@@ -1,8 +1,12 @@
 using Health_Joy_Mobile_Backend.Data;
-using Health_Joy_Mobile_Backend.Data.Entity;
 using Health_Joy_Mobile_Backend.Schema;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Health_Joy_Backend_Mobile.IngredientOperations.GetIngredients;
+using Health_Joy_Backend_Mobile.IngredientOperations.GetIngredientDetailQuery;
+using Health_Joy_Backend_Mobile.IngredientOperations.CreateIngredient;
+using Health_Joy_Backend_Mobile.IngredientOperations.UpdateIngredient;
+using Health_Joy_Backend_Mobile.IngredientOperations.DeleteIngredient;
 
 namespace Health_Joy_Backend_Mobile.Controllers
 {
@@ -17,20 +21,11 @@ namespace Health_Joy_Backend_Mobile.Controllers
             _context = context;
         }
 
-
         [HttpGet]
         public async Task<IActionResult> GetAllIngredients()
         {
-            try
-            {
-                var ingredients = await _context.Ingredients.ToListAsync();
-                return Ok(ingredients);
-            }
-            catch (Exception ex)
-            {
-                Console.Error.WriteLine($"Error fetching ingredients: {ex}");
-                return StatusCode(500, "Internal Server Error");
-            }
+            GetIngredientsQuery query = new GetIngredientsQuery(_context);
+            return await query.Handle();
         }
 
 
@@ -81,92 +76,32 @@ namespace Health_Joy_Backend_Mobile.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetIngredientById(int id)
         {
-            try
-            {
-                var ingredient = await _context.Ingredients.FindAsync(id);
-                if (ingredient == null)
-                    return NotFound();
-
-                return Ok(ingredient);
-            }
-            catch (Exception ex)
-            {
-                Console.Error.WriteLine($"Error fetching ingredient by id: {ex}");
-                return StatusCode(500, "Internal Server Error");
-            }
+            GetIngredientDetailQuery query = new GetIngredientDetailQuery(_context, id);
+            return await query.Handle();
         }
 
 
         [HttpPost]
         public async Task<IActionResult> CreateIngredient(IngredientRequest request)
         {
-            try
-            {
-                var newIngredient = new Ingredient
-                {
-                    Name = request.Name,
-                    Description = request.Description,
-                    RiskLevel = request.RiskLevel
-                };
-
-                _context.Ingredients.Add(newIngredient);
-                await _context.SaveChangesAsync();
-
-                return CreatedAtAction(nameof(GetIngredientById), new { id = newIngredient.IngredientId }, newIngredient);
-            }
-            catch (Exception ex)
-            {
-                Console.Error.WriteLine($"Error creating ingredient: {ex}");
-                return StatusCode(500, "Internal Server Error");
-            }
+            CreateIngredientCommand command = new CreateIngredientCommand(_context, request);
+            return await command.Handle();
         }
 
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateIngredient(int id, IngredientRequest request)
         {
-            try
-            {
-                var ingredient = await _context.Ingredients.FindAsync(id);
-                if (ingredient == null)
-                    return NotFound();
-
-                ingredient.Name = request.Name;
-                ingredient.Description = request.Description;
-                ingredient.RiskLevel = request.RiskLevel;
-
-                _context.Ingredients.Update(ingredient);
-                await _context.SaveChangesAsync();
-
-                return Ok(ingredient);
-            }
-            catch (Exception ex)
-            {
-                Console.Error.WriteLine($"Error updating ingredient: {ex}");
-                return StatusCode(500, "Internal Server Error");
-            }
+            UpdateIngredientCommand command = new UpdateIngredientCommand(_context, id, request);
+            return await command.Handle();
         }
 
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteIngredient(int id)
         {
-            try
-            {
-                var ingredient = await _context.Ingredients.FindAsync(id);
-                if (ingredient == null)
-                    return NotFound();
-
-                _context.Ingredients.Remove(ingredient);
-                await _context.SaveChangesAsync();
-
-                return NoContent();
-            }
-            catch (Exception ex)
-            {
-                Console.Error.WriteLine($"Error deleting ingredient: {ex}");
-                return StatusCode(500, "Internal Server Error");
-            }
+            DeleteIngredientCommand command = new DeleteIngredientCommand(_context, id);
+            return await command.Handle();
         }
     }
 }
