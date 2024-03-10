@@ -229,3 +229,5 @@ C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backe
 /Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.pdb
 /Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.genruntimeconfig.cache
 /Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/ref/Health_Joy_Backend_Mobile.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/AutoMapper.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

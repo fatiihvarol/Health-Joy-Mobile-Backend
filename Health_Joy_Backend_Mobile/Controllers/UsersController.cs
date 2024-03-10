@@ -1,9 +1,14 @@
 using Health_Joy_Mobile_Backend.Schema;
-using Health_Joy_Mobile_Backend.Data.Entity;
 using Health_Joy_Mobile_Backend.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Text.Json;
+using AutoMapper;
+using Health_Joy_Backend_Mobile.UserOperations.GetUsers;
+using Health_Joy_Backend_Mobile.UserOperations.CreateUser;
+using Health_Joy_Backend_Mobile.UserOperations.GetUserDetail;
+using Health_Joy_Backend_Mobile.UserOperations.UpdateUser;
+using Health_Joy_Backend_Mobile.UserOperations.DeleteUser;
+using Health_Joy_Backend_Mobile.UserOperations.Login;
 
 namespace Health_Joy_Backend_Mobile.Controllers
 {
@@ -12,6 +17,7 @@ namespace Health_Joy_Backend_Mobile.Controllers
     public class UserController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly IMapper _mapper;
 
         public UserController(AppDbContext context)
         {
@@ -21,148 +27,45 @@ namespace Health_Joy_Backend_Mobile.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllUsers()
         {
-            try
-            {
-                var users = await _context.Users.ToListAsync();
-                return Ok(users);
-            }
-            catch (Exception ex)
-            {
-                Console.Error.WriteLine($"Error fetching users: {ex}");
-                return StatusCode(500, "Internal Server Error");
-            }
+            GetUsersQuery query = new GetUsersQuery(_context);
+            return await query.Handle();
         }
+
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetUserById(int id)
         {
-            try
-            {
-                var user = await _context.Users.FindAsync(id);
-                if (user == null)
-                    return NotFound();
-
-                return Ok(user);
-            }
-            catch (Exception ex)
-            {
-                Console.Error.WriteLine($"Error fetching user by id: {ex}");
-                return StatusCode(500, "Internal Server Error");
-            }
+            GetUserDetailQuery query = new GetUserDetailQuery(_context, id);
+            return await query.Handle();
         }
+
 
         [HttpPost("Login")]
         public async Task<IActionResult> Login(string email, string password)
         {
-            try
-            {
-                var user = await _context.Users.Where(x => x.Email == email)
-                    .Where(x => x.Password == password)
-                    .FirstOrDefaultAsync();
-
-                if (user == null)
-                    return NotFound();
-
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                Console.Error.WriteLine($"Error fetching user by id: {ex}");
-                return StatusCode(500, "Internal Server Error");
-            }
+            LoginCommand command = new LoginCommand(_context, email, password);
+            return await command.Handle();
         }
 
         [HttpPost]
         public async Task<IActionResult> Register([FromBody] UserRequest userRequest)
         {
-            try
-            {
-                // Log received user request
-                Console.WriteLine($"Registration Request: {JsonSerializer.Serialize(userRequest)}");
-
-                if (ModelState.IsValid)
-                {
-                    if (userRequest.Password != userRequest.ConfirmPassword)
-                    {
-                        ModelState.AddModelError("Message", "Passwords do not match");
-                        return BadRequest(ModelState);
-                    }
-
-                    var fromDb = await _context.Users.Where(x => x.Email == userRequest.Email)
-                        .FirstOrDefaultAsync();
-
-                    if (fromDb is not null)
-                    {
-                        ModelState.AddModelError("Message", "Email already taken");
-                        return BadRequest(ModelState);
-                    }
-
-                    var user = new User
-                    {
-                        FullName = userRequest.FullName,
-                        Email = userRequest.Email,
-                        Password = userRequest.Password, // Şifreleme yapmadan kaydediyoruz
-                        IsActive = true
-                    };
-
-                    _context.Users.Add(user);
-                    await _context.SaveChangesAsync();
-
-                    return Ok();
-                }
-
-                return BadRequest(ModelState);
-            }
-            catch (Exception ex)
-            {
-                // Log exception details
-                Console.Error.WriteLine($"Error during registration: {ex}");
-                return StatusCode(500, "Internal Server Error");
-            }
+            CreateUserCommand command = new CreateUserCommand(_context, userRequest);
+            return await command.Handle();
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {
-            try
-            {
-                var user = await _context.Users.FindAsync(id);
-                if (user == null)
-                    return NotFound();
-
-                user.IsActive = false;
-                await _context.SaveChangesAsync();
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                Console.Error.WriteLine($"Error deleting user: {ex}");
-                return StatusCode(500, "Internal Server Error");
-            }
+            DeleteUserCommand command = new DeleteUserCommand(_context, id);
+            return await command.Handle();
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateUser(int id, [FromBody] UserRequest userRequest)
         {
-            try
-            {
-                var user = await _context.Users.FindAsync(id);
-                if (user == null)
-                    return NotFound();
-
-                user.FullName = userRequest.FullName;
-                user.Email = userRequest.Email;
-                user.Password = userRequest.Password; // Şifreleme yapmadan kaydediyoruz
-
-                await _context.SaveChangesAsync();
-
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                Console.Error.WriteLine($"Error updating user: {ex}");
-                return StatusCode(500, "Internal Server Error");
-            }
+            UpdateUserCommand command = new UpdateUserCommand(_context, id, userRequest);
+            return await command.Handle();
         }
     }
 }
