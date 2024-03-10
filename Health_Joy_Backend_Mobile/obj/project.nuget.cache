@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qCteqDSjvMfRSgBobbmzPCVawZHS3mTCm67mg5uSYXbSUGKKSyjFd8zgAiC8jIyqN33wW/7v6KTSBuEawE50iA==",
+  "dgSpecHash": "SGhtabhcSo1dMQs+VD0ERPRtFqFE7OvKEBkhc6nn7vUFivICzP2siN5lELhJ+tTabBLFwIg6D5akJc0sMcQfwA==",
   "success": true,
-  "projectFilePath": "/Users/cerenersoz/Desktop/Health-Joy-Backend-Mobile/Health_Joy_Backend_Mobile/Health_Joy_Backend_Mobile.csproj",
+  "projectFilePath": "/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/Health_Joy_Backend_Mobile.csproj",
   "expectedPackageFiles": [
     "/Users/cerenersoz/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/cerenersoz/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",

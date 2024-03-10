@@ -35,31 +35,46 @@ namespace Health_Joy_Backend_Mobile.Controllers
 
 
         [HttpPost("CalculateAverageRiskLevel")]
-        public async Task<IActionResult> CalculateAverageRiskLevelAsync([FromBody] IngredientRequest[] incomingArray)
+        public async Task<IActionResult> CalculateAverageRiskLevelAsync([FromBody] IngredientsListReadFromPhoto[] incomingArray)
         {
-
             if (incomingArray == null || incomingArray.Length == 0)
                 return BadRequest("Incoming array is null or empty.");
 
             IngredientRequest[] ingredients = new IngredientRequest[incomingArray.Length];
             IngredientRequest tempIngredient = new IngredientRequest();
             int totalRiskLevel = 0;
-            int avarageTotalRiskLevel = 0;
+            double avarageTotalRiskLevel = 0;
+            int ingredientNotInTheDatabaseCounter = 0; //database de kaydı olmayan ingredient'lerin ortalama hesaplarken dahil edilmemesi için
 
             for (int i = 0; i < incomingArray.Length; i++)
             {
-                var element = await _context.Ingredients.FindAsync(incomingArray[i].Name);
+                var element = await _context.Ingredients.FirstOrDefaultAsync(x => x.Name == incomingArray[i].Name);
                 if (element is not null)
                 {
+                    //buraya ihtiyaç olmayabilir 
+                    //sadece ortalma değere ihtiyacımız olursa 
+                    //bu kısmı kaldırıp sayıları toplayıp ortalama hesaplat
+                    Console.WriteLine(i + ". ingredient, name:  " + element.Name + " risk level: " + element.RiskLevel);
                     tempIngredient.Name = element.Name;
                     tempIngredient.RiskLevel = element.RiskLevel;
                     ingredients[i] = tempIngredient;
                     totalRiskLevel += element.RiskLevel;
                 }
+                else
+                {
+                    //eğer database'e kayıtlı olmayan bir dataysa
+                    Console.WriteLine(i + ". ingredient: " + incomingArray[i].Name + " is not found in the database.");
+                    ingredientNotInTheDatabaseCounter++;
+                }
             }
-            avarageTotalRiskLevel = totalRiskLevel / incomingArray.Length;
 
-            return Ok(avarageTotalRiskLevel);
+            if (totalRiskLevel is not 0)
+            {
+                avarageTotalRiskLevel = (double)(totalRiskLevel / (incomingArray.Length - ingredientNotInTheDatabaseCounter));
+                return Ok(" Total: " + totalRiskLevel + " Avarage: " + avarageTotalRiskLevel);
+            }
+            else
+                return BadRequest("No ingredient is registered in the database");
         }
 
 

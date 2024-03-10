@@ -3562,11 +3562,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/cerenersoz/Desktop/Health-Joy-Backend-Mobile/Health_Joy_Backend_Mobile/Health_Joy_Backend_Mobile.csproj",
+      "projectUniqueName": "/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/Health_Joy_Backend_Mobile.csproj",
       "projectName": "Health_Joy_Backend_Mobile",
-      "projectPath": "/Users/cerenersoz/Desktop/Health-Joy-Backend-Mobile/Health_Joy_Backend_Mobile/Health_Joy_Backend_Mobile.csproj",
+      "projectPath": "/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/Health_Joy_Backend_Mobile.csproj",
       "packagesPath": "/Users/cerenersoz/.nuget/packages/",
-      "outputPath": "/Users/cerenersoz/Desktop/Health-Joy-Backend-Mobile/Health_Joy_Backend_Mobile/obj/",
+      "outputPath": "/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/cerenersoz/.nuget/NuGet/NuGet.Config"
