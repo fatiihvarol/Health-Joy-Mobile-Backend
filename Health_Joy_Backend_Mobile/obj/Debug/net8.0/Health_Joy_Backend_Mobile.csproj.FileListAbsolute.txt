@@ -75,80 +75,159 @@
 /Users/cerenersoz/Desktop/Health-Joy-Backend-Mobile/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
 /Users/cerenersoz/Desktop/Health-Joy-Backend-Mobile/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
 /Users/cerenersoz/Desktop/Health-Joy-Backend-Mobile/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.sourcelink.json
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\appsettings.json
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Health_Joy_Backend_Mobile.exe
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Health_Joy_Backend_Mobile.deps.json
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Health_Joy_Backend_Mobile.runtimeconfig.json
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Health_Joy_Backend_Mobile.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Health_Joy_Backend_Mobile.pdb
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Azure.Core.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Azure.Identity.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Humanizer.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Microsoft.Identity.Client.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Microsoft.OpenApi.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Mono.TextTemplating.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\System.CodeDom.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\System.Drawing.Common.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\System.Memory.Data.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\System.Runtime.Caching.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\System.Security.Permissions.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\System.Windows.Extensions.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Debug\net8.0\Health_Joy_Backend_Mobile.csproj.AssemblyReference.cache
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Debug\net8.0\Health_Joy_Backend_Mobile.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Debug\net8.0\Health_Joy_Backend_Mobile.AssemblyInfoInputs.cache
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Debug\net8.0\Health_Joy_Backend_Mobile.AssemblyInfo.cs
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Debug\net8.0\Health_Joy_Backend_Mobile.csproj.CoreCompileInputs.cache
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Debug\net8.0\Health_Joy_Backend_Mobile.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Debug\net8.0\Health_Joy_Backend_Mobile.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Debug\net8.0\Health_Joy_Backend_Mobile.sourcelink.json
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Debug\net8.0\staticwebassets\msbuild.Health_Joy_Backend_Mobile.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Debug\net8.0\staticwebassets\msbuild.build.Health_Joy_Backend_Mobile.props
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Health_Joy_Backend_Mobile.props
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Health_Joy_Backend_Mobile.props
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Debug\net8.0\scopedcss\bundle\Health_Joy_Backend_Mobile.styles.css
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Debug\net8.0\Health_Joy_Backend_Mobile.csproj.CopyComplete
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Debug\net8.0\Health_Joy_Backend_Mobile.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Debug\net8.0\refint\Health_Joy_Backend_Mobile.dll
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Debug\net8.0\Health_Joy_Backend_Mobile.pdb
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Debug\net8.0\Health_Joy_Backend_Mobile.genruntimeconfig.cache
-C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Debug\net8.0\ref\Health_Joy_Backend_Mobile.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/appsettings.Development.json
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/appsettings.json
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Health_Joy_Backend_Mobile.exe
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Health_Joy_Backend_Mobile.deps.json
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Health_Joy_Backend_Mobile.runtimeconfig.json
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Health_Joy_Backend_Mobile.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Health_Joy_Backend_Mobile.pdb
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Azure.Core.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Azure.Identity.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Humanizer.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.Data.SqlClient.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Design.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.Identity.Client.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.OpenApi.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.SqlServer.Server.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Mono.TextTemplating.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/System.CodeDom.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/System.Drawing.Common.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/System.Memory.Data.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/System.Runtime.Caching.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/System.Security.Permissions.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/System.Windows.Extensions.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.csproj.AssemblyReference.cache
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.AssemblyInfoInputs.cache
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.AssemblyInfo.cs
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.csproj.CoreCompileInputs.cache
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.sourcelink.json
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/staticwebassets.build.json
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/staticwebassets.development.json
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/staticwebassets/msbuild.Health_Joy_Backend_Mobile.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/staticwebassets/msbuild.build.Health_Joy_Backend_Mobile.props
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Health_Joy_Backend_Mobile.props
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Health_Joy_Backend_Mobile.props
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/staticwebassets.pack.json
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/scopedcss/bundle/Health_Joy_Backend_Mobile.styles.css
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.csproj.CopyComplete
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/refint/Health_Joy_Backend_Mobile.dll
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.pdb
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.genruntimeconfig.cache
+C:/Users/fatih/OneDrive/Masaüstü/final project backend/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/ref/Health_Joy_Backend_Mobile.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/appsettings.Development.json
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/appsettings.json
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Health_Joy_Backend_Mobile
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Health_Joy_Backend_Mobile.deps.json
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Health_Joy_Backend_Mobile.runtimeconfig.json
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Health_Joy_Backend_Mobile.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Health_Joy_Backend_Mobile.pdb
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Azure.Core.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Azure.Identity.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Humanizer.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.Data.SqlClient.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.Identity.Client.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.SqlServer.Server.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Microsoft.Win32.SystemEvents.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Mono.TextTemplating.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/System.CodeDom.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/System.Drawing.Common.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/System.Memory.Data.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/System.Runtime.Caching.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/System.Security.Permissions.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/System.Windows.Extensions.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.csproj.AssemblyReference.cache
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.AssemblyInfoInputs.cache
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.AssemblyInfo.cs
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.csproj.CoreCompileInputs.cache
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.MvcApplicationPartsAssemblyInfo.cs
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.MvcApplicationPartsAssemblyInfo.cache
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.sourcelink.json
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/staticwebassets.build.json
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/staticwebassets.development.json
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/staticwebassets/msbuild.Health_Joy_Backend_Mobile.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/staticwebassets/msbuild.build.Health_Joy_Backend_Mobile.props
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Health_Joy_Backend_Mobile.props
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Health_Joy_Backend_Mobile.props
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/scopedcss/bundle/Health_Joy_Backend_Mobile.styles.css
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.csproj.CopyComplete
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/refint/Health_Joy_Backend_Mobile.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.pdb
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/Health_Joy_Backend_Mobile.genruntimeconfig.cache
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/obj/Debug/net8.0/ref/Health_Joy_Backend_Mobile.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/AutoMapper.dll
+/Users/cerenersoz/Desktop/Health-Joy-Mobile-Backend/Health_Joy_Backend_Mobile/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
