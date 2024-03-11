@@ -11,10 +11,12 @@ namespace Health_Joy_Backend_Mobile.Controllers
     [Route("api/[controller]")]
     public class UserController : ControllerBase
     {
+        private readonly ILogger<UserController> _logger;
         private readonly AppDbContext _context;
 
-        public UserController(AppDbContext context)
+        public UserController(ILogger<UserController> logger, AppDbContext context)
         {
+            _logger = logger;
             _context = context;
         }
 
@@ -28,7 +30,7 @@ namespace Health_Joy_Backend_Mobile.Controllers
             }
             catch (Exception ex)
             {
-                Console.Error.WriteLine($"Error fetching users: {ex}");
+                _logger.LogError(ex, "Error fetching users");
                 return StatusCode(500, "Internal Server Error");
             }
         }

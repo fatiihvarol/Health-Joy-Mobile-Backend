@@ -6,6 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddLogging();
+
 
 string connection = builder.Configuration.GetConnectionString("MsSqlConnection");
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connection));
