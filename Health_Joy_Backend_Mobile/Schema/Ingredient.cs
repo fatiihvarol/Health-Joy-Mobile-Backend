@@ -1,3 +1,5 @@
+using Health_Joy_Mobile_Backend.Data.Entity;
+
 namespace Health_Joy_Mobile_Backend.Schema;
 
 
@@ -15,11 +17,10 @@ public class IngredientResponse
     public int RiskLevel { get; set; }
 }
 
-//bir fotoğraf çekildikten sonra içindekiler listesinin array halinde gelmesi halinde
-//bütün arrayin sadece içinde isimler olacak
-//bu yüzden sadece ismi alınan bir arraye ihtiyaç duydum (CEREN)
 
-public class IngredientsListReadFromPhoto
+public class ProductIngredientResponse
 {
-    public string Name { get; set; }
+    public List<Ingredient> Ing { get; set; }
+    public double AverageRiskLevel { get; set; }
 }
+

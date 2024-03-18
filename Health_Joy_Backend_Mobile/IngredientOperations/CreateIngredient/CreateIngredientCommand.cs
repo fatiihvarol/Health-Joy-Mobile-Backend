@@ -24,8 +24,8 @@ namespace Health_Joy_Backend_Mobile.IngredientOperations.CreateIngredient
             {
                 var newIngredient = new Ingredient
                 {
-                    Name = _ingredientRequest.Name,
-                    Description = _ingredientRequest.Description,
+                    Name = _ingredientRequest.Name.ToLower(),
+                    Description = _ingredientRequest.Description.ToLower(),
                     RiskLevel = _ingredientRequest.RiskLevel
                 };
                 _context.Ingredients.Add(newIngredient);

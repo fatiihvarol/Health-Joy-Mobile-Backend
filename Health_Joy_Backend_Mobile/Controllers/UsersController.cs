@@ -29,7 +29,7 @@ namespace Health_Joy_Backend_Mobile.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllUsers()
         {
-<<<<<<< HEAD
+            /*
             try
             {
                 var users = await _context.Users.ToListAsync();
@@ -40,10 +40,9 @@ namespace Health_Joy_Backend_Mobile.Controllers
                 _logger.LogError(ex, "Error fetching users");
                 return StatusCode(500, "Internal Server Error");
             }
-=======
+            */
             GetUsersQuery query = new GetUsersQuery(_context);
             return await query.Handle();
->>>>>>> 6c41e3a7a7f3e009bdc74a1f3cef7572651f9380
         }
 
 
