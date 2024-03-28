@@ -8,6 +8,7 @@ namespace Health_Joy_Mobile_Backend.Data.Entity
 
         public string FullName { get; set; }
         public bool IsActive { get; set; }
+        public string Role { get; set; }
 
         public virtual List<Product> Favorites { get; set; }
     }
