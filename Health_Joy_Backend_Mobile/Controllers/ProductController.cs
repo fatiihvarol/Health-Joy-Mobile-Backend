@@ -26,7 +26,7 @@ namespace Health_Joy_Backend_Mobile.Controllers
             return await createProductCommand.Handle();
         }
         
-        [HttpGet("Product")]
+        [HttpGet]
         public async Task<ApiResponse<ProductResponse>> GetProduct(string? productBarcode)
         {
             var getProductQuery = new GetProductQuery(_context);

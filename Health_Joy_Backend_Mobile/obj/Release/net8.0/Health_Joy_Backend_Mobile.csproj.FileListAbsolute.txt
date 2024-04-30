@@ -75,3 +75,6 @@ C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backe
 C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Release\net8.0\Health_Joy_Backend_Mobile.pdb
 C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Release\net8.0\Health_Joy_Backend_Mobile.genruntimeconfig.cache
 C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\obj\Release\net8.0\ref\Health_Joy_Backend_Mobile.dll
+C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Release\net8.0\package-lock.json
+C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Release\net8.0\AutoMapper.dll
+C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\bin\Release\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

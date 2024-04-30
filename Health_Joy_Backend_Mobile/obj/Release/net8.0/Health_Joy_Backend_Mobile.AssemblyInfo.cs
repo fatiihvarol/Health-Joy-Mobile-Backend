@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Health_Joy_Backend_Mobile")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9727bb27bb246a1c510026a61558936711cd13e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0522e4a97b3f3bfd471817090af946cb1157e43")]
 [assembly: System.Reflection.AssemblyProductAttribute("Health_Joy_Backend_Mobile")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Health_Joy_Backend_Mobile")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
