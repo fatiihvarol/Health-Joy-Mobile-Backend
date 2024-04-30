@@ -123,7 +123,7 @@ namespace Health_Joy_Backend_Mobile.Migrations
 
                     b.HasIndex("ProductsProductId");
 
-                    b.ToTable("IngredientProduct");
+                    b.ToTable("ProductIngredients", (string)null);
                 });
 
             modelBuilder.Entity("Health_Joy_Mobile_Backend.Data.Entity.Product", b =>

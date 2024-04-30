@@ -23,11 +23,14 @@ namespace Health_Joy_Mobile_Backend.Data
                 .WithOne(p => p.User)
                 .HasForeignKey(p => p.UserId)
                 .IsRequired();
-
-            // Product ve Ingredient arasındaki ilişki
+            
+            
+            // Configure many-to-many relationship between Product and Ingredient
             modelBuilder.Entity<Product>()
                 .HasMany(p => p.Ingredients)
-                .WithMany(i => i.Products);
+                .WithMany(i => i.Products)
+                .UsingEntity(join => join.ToTable("ProductIngredients")); // Customize the join table name if needed
+        
 
             base.OnModelCreating(modelBuilder);
         }

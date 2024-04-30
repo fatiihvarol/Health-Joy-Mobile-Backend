@@ -24,3 +24,9 @@ public class ProductIngredientResponse
     public double AverageRiskLevel { get; set; }
 }
 
+public class IngredientRequestCreateProduct
+{
+    public string? Name { get; set; }
+
+}
+

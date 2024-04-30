@@ -7,6 +7,7 @@ namespace Health_Joy_Mobile_Backend.Data.Entity
         public string? Description { get; set; }
         public int RiskLevel { get; set; }
 
-        public virtual List<Product>? Products { get; set; }
+        // Navigation property for many-to-many relationship with Product
+        public virtual ICollection<Product> Products { get; set; } = new List<Product>();
     }
 }
