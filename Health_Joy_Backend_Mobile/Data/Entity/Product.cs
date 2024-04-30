@@ -3,7 +3,7 @@ namespace Health_Joy_Mobile_Backend.Data.Entity
     public class Product
     {
         public int ProductId { get; set; }
-        public int BarcodeNo { get; set; }
+        public string BarcodeNo { get; set; }
         public string? Name { get; set; }
         public string? Description { get; set; }
         public long TotalRiskValue { get; set; }

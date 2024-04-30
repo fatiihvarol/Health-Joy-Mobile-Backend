@@ -3,6 +3,7 @@ using Health_Joy_Mobile_Backend.Schema;
 using Microsoft.AspNetCore.Mvc;
 using Health_Joy_Backend_Mobile.Applications.ProductOperations.CreateProduct;
 using Health_Joy_Backend_Mobile.Applications.ProductOperations.GetProduct;
+using Health_Joy_Backend_Mobile.Common;
 
 namespace Health_Joy_Backend_Mobile.Controllers
 {
@@ -25,9 +26,13 @@ namespace Health_Joy_Backend_Mobile.Controllers
         }
         
         [HttpGet("Product")]
-        public async Task<ProductResponse> GetProduct(int productBarcode)
+        public async Task<ApiResponse<ProductResponse>> GetProduct(string? productBarcode)
         {
             var getProductQuery = new GetProductQuery(_context);
+            if (productBarcode is null)
+            {
+                return new ApiResponse<ProductResponse>("barcode is null");
+            }
             return await getProductQuery.ExecuteAsync(productBarcode);
         }
     }

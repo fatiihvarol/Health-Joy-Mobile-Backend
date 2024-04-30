@@ -5,7 +5,7 @@ namespace Health_Joy_Mobile_Backend.Schema;
 
 public class ProductRequest
 {
-    public int BarcodeNo { get; set; }
+    public string? BarcodeNo { get; set; }
     public string? Name { get; set; }
     public string? Description { get; set; }
     public string? ProductType { get; set; }
@@ -17,7 +17,7 @@ public class ProductRequest
 public class ProductResponse
 {
     public int ProductId { get; set; }
-    public int BarcodeNo { get; set; }
+    public string? BarcodeNo { get; set; }
     public string? Name { get; set; }
     public string? Description { get; set; }
     public long TotalRiskValue { get; set; }
@@ -25,4 +25,11 @@ public class ProductResponse
     public bool IsApprovedByAdmin { get; set; }
     public int UserId { get; set; }
     public virtual ICollection<IngredientResponse>? Ingredients { get; set; }
+}
+
+public class ProductNotFound
+{
+    public string StatusCode { get; set; }
+    public string Message { get; set; }
+    
 }

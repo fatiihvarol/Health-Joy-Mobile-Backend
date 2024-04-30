@@ -4,6 +4,8 @@ using Health_Joy_Mobile_Backend.Schema;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
+using Health_Joy_Backend_Mobile.Common;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace Health_Joy_Backend_Mobile.Applications.ProductOperations.GetProduct
 {
@@ -16,15 +18,16 @@ namespace Health_Joy_Backend_Mobile.Applications.ProductOperations.GetProduct
             _context = context;
         }
 
-        public async Task<ProductResponse> ExecuteAsync(int barcodeNo)
+        public async Task<ApiResponse<ProductResponse>> ExecuteAsync(string barcodeNo)
         {
             var product = await _context.Products
                 .Include(p => p.Ingredients) // Ingredients'ı da Include et
-                .FirstOrDefaultAsync(p => p.BarcodeNo == barcodeNo);
+                .Where(p => p.BarcodeNo.Equals(barcodeNo))
+                .FirstOrDefaultAsync();
 
-            if (product == null)
+            if (product is null)
             {
-                return null;
+                return new ApiResponse<ProductResponse>("not found");
             }
 
             // Ingredients'ı IngredientResponse listesine dönüştür
@@ -51,7 +54,7 @@ namespace Health_Joy_Backend_Mobile.Applications.ProductOperations.GetProduct
                 Ingredients = ingredientResponses
             };
 
-            return response;
+            return new ApiResponse<ProductResponse>(response);
         }
     }
 }
