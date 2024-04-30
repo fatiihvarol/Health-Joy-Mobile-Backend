@@ -2,7 +2,7 @@ using Health_Joy_Mobile_Backend.Data;
 using Health_Joy_Mobile_Backend.Schema;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Health_Joy_Backend_Mobile.IngredientOperations.DeleteIngredient
+namespace Health_Joy_Backend_Mobile.Applications.IngredientOperations.DeleteIngredient
 {
     public class DeleteIngredientCommand
     {

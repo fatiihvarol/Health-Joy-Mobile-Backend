@@ -2,7 +2,7 @@ using Health_Joy_Mobile_Backend.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace Health_Joy_Backend_Mobile.IngredientOperations.GetIngredientDetailQuery
+namespace Health_Joy_Backend_Mobile.Applications.IngredientOperations.GetIngredientDetailQuery
 {
     public class GetIngredientDetailQuery
     {

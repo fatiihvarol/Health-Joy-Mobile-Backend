@@ -1,20 +1,18 @@
 using Health_Joy_Mobile_Backend.Data;
-using Health_Joy_Mobile_Backend.Schema;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Health_Joy_Backend_Mobile.UserOperations.UpdateUser
+namespace Health_Joy_Backend_Mobile.Applications.UserOperations.DeleteUser
 {
-    public class UpdateUserCommand
+    public class DeleteUserCommand
     {
+
         private readonly AppDbContext _context;
         private readonly int _userId;
-        private readonly UserRequest _userRequest;
 
-        public UpdateUserCommand(AppDbContext context, int userId, UserRequest userRequest)
+        public DeleteUserCommand(AppDbContext context, int userId)
         {
             _context = context;
             _userId = userId;
-            _userRequest = userRequest;
         }
 
         public async Task<IActionResult> Handle()
@@ -25,20 +23,17 @@ namespace Health_Joy_Backend_Mobile.UserOperations.UpdateUser
                 if (user == null)
                     return new NotFoundResult();
 
-                // Update user properties with values from request
-                user.FullName = _userRequest.FullName;
-                user.Email = _userRequest.Email;
-                user.Password = _userRequest.Password;
-
+                //user.IsActive = false;
+                _context.Remove(user);
                 await _context.SaveChangesAsync();
-
                 return new OkResult();
             }
             catch (Exception ex)
             {
-                Console.Error.WriteLine($"Error updating user: {ex}");
+                Console.Error.WriteLine($"Error deleting user: {ex}");
                 return new StatusCodeResult(500);
             }
         }
+
     }
 }

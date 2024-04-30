@@ -4,7 +4,7 @@ using Health_Joy_Mobile_Backend.Schema;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace Health_Joy_Backend_Mobile.UserOperations.CreateUser
+namespace Health_Joy_Backend_Mobile.Applications.UserOperations.CreateUser
 {
     public class CreateUserCommand
     {

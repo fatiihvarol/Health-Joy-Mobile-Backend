@@ -2,11 +2,11 @@ using Health_Joy_Mobile_Backend.Data;
 using Health_Joy_Mobile_Backend.Schema;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Health_Joy_Backend_Mobile.IngredientOperations.GetIngredients;
-using Health_Joy_Backend_Mobile.IngredientOperations.GetIngredientDetailQuery;
-using Health_Joy_Backend_Mobile.IngredientOperations.CreateIngredient;
-using Health_Joy_Backend_Mobile.IngredientOperations.UpdateIngredient;
-using Health_Joy_Backend_Mobile.IngredientOperations.DeleteIngredient;
+using Health_Joy_Backend_Mobile.Applications.IngredientOperations.GetIngredients;
+using Health_Joy_Backend_Mobile.Applications.IngredientOperations.GetIngredientDetailQuery;
+using Health_Joy_Backend_Mobile.Applications.IngredientOperations.CreateIngredient;
+using Health_Joy_Backend_Mobile.Applications.IngredientOperations.UpdateIngredient;
+using Health_Joy_Backend_Mobile.Applications.IngredientOperations.DeleteIngredient;
 using Health_Joy_Mobile_Backend.Data.Entity;
 using Microsoft.IdentityModel.Tokens;
 

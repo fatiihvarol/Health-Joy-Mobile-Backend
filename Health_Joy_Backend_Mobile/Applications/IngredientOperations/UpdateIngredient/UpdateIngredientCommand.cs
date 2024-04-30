@@ -2,7 +2,7 @@ using Health_Joy_Mobile_Backend.Data;
 using Health_Joy_Mobile_Backend.Schema;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Health_Joy_Backend_Mobile.IngredientOperations.UpdateIngredient
+namespace Health_Joy_Backend_Mobile.Applications.IngredientOperations.UpdateIngredient
 {
     public class UpdateIngredientCommand
     {

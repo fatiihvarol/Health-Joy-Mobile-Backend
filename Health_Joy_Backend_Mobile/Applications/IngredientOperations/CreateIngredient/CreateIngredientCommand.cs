@@ -3,7 +3,7 @@ using Health_Joy_Mobile_Backend.Data.Entity;
 using Health_Joy_Mobile_Backend.Schema;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Health_Joy_Backend_Mobile.IngredientOperations.CreateIngredient
+namespace Health_Joy_Backend_Mobile.Applications.IngredientOperations.CreateIngredient
 {
     public class CreateIngredientCommand
     {

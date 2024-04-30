@@ -1,14 +1,13 @@
 using Health_Joy_Mobile_Backend.Schema;
 using Health_Joy_Mobile_Backend.Data;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using AutoMapper;
-using Health_Joy_Backend_Mobile.UserOperations.GetUsers;
-using Health_Joy_Backend_Mobile.UserOperations.CreateUser;
-using Health_Joy_Backend_Mobile.UserOperations.GetUserDetail;
-using Health_Joy_Backend_Mobile.UserOperations.UpdateUser;
-using Health_Joy_Backend_Mobile.UserOperations.DeleteUser;
-using Health_Joy_Backend_Mobile.UserOperations.Login;
+using Health_Joy_Backend_Mobile.Applications.UserOperations.GetUsers;
+using Health_Joy_Backend_Mobile.Applications.UserOperations.CreateUser;
+using Health_Joy_Backend_Mobile.Applications.UserOperations.GetUserDetail;
+using Health_Joy_Backend_Mobile.Applications.UserOperations.UpdateUser;
+using Health_Joy_Backend_Mobile.Applications.UserOperations.DeleteUser;
+using Health_Joy_Backend_Mobile.Applications.UserOperations.Login;
 
 namespace Health_Joy_Backend_Mobile.Controllers
 {

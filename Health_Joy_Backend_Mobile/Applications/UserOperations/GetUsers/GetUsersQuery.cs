@@ -2,7 +2,7 @@ using Health_Joy_Mobile_Backend.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace Health_Joy_Backend_Mobile.UserOperations.GetUsers
+namespace Health_Joy_Backend_Mobile.Applications.UserOperations.GetUsers
 {
     public class GetUsersQuery
     {

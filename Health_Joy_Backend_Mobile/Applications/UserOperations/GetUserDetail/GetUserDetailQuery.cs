@@ -1,7 +1,7 @@
 using Health_Joy_Mobile_Backend.Data;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Health_Joy_Backend_Mobile.UserOperations.GetUserDetail
+namespace Health_Joy_Backend_Mobile.Applications.UserOperations.GetUserDetail
 {
     public class GetUserDetailQuery
     {
