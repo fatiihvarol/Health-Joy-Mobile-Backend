@@ -37,7 +37,8 @@ namespace Health_Joy_Backend_Mobile.Applications.UserOperations.CreateUser
                     FullName = _userRequest.FullName,
                     Email = _userRequest.Email,
                     Password = _userRequest.Password,
-                    IsActive = true
+                    IsActive = true,
+                    Role = "user" 
                 };
                 _context.Users.Add(user);
                 await _context.SaveChangesAsync();

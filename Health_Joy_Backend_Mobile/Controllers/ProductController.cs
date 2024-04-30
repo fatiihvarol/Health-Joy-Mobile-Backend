@@ -3,6 +3,7 @@ using Health_Joy_Mobile_Backend.Schema;
 using Microsoft.AspNetCore.Mvc;
 using Health_Joy_Backend_Mobile.Applications.ProductOperations.CreateProduct;
 using Health_Joy_Backend_Mobile.Applications.ProductOperations.GetProduct;
+using Health_Joy_Backend_Mobile.Applications.ProductOperations.UpdateProduct;
 using Health_Joy_Backend_Mobile.Common;
 
 namespace Health_Joy_Backend_Mobile.Controllers
@@ -34,6 +35,12 @@ namespace Health_Joy_Backend_Mobile.Controllers
                 return new ApiResponse<ProductResponse>("barcode is null");
             }
             return await getProductQuery.ExecuteAsync(productBarcode);
+        }
+        [HttpPut("Approve")]
+        public async Task<ApiResponse> GetProduct(int productId )
+        {
+            var approveProduct = new UpdateProductCommand(_context);
+            return await approveProduct.ExecuteAsync(productId);
         }
     }
 }
