@@ -29,12 +29,19 @@ namespace Health_Joy_Backend_Mobile.Controllers
         [HttpGet]
         public async Task<ApiResponse<ProductResponse>> GetProduct(string? productBarcode)
         {
-            var getProductQuery = new GetProductQuery(_context);
+            var getProductQuery = new GetProductbyBarcodeQuery(_context);
             if (productBarcode is null)
             {
                 return new ApiResponse<ProductResponse>("barcode is null");
             }
             return await getProductQuery.ExecuteAsync(productBarcode);
+        }
+        [HttpGet("NotApproved")]
+        public async Task<ApiResponse<List<ProductResponse>>> GetProductNotApproved()
+        {
+            var getProductNotApprovedQuery = new GetAllNotApprovedProductsQuery(_context);
+            return await getProductNotApprovedQuery.ExecuteAsync();
+
         }
         [HttpPut("Approve")]
         public async Task<ApiResponse> GetProduct(int productId )

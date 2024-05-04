@@ -9,11 +9,11 @@ using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace Health_Joy_Backend_Mobile.Applications.ProductOperations.GetProduct
 {
-    public class GetProductQuery
+    public class GetProductbyBarcodeQuery
     {
         private readonly AppDbContext _context;
 
-        public GetProductQuery(AppDbContext context)
+        public GetProductbyBarcodeQuery(AppDbContext context)
         {
             _context = context;
         }
