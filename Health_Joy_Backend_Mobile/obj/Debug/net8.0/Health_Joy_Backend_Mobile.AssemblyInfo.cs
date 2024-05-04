@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Health_Joy_Backend_Mobile")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c98e6ee433d7342a73dcaf6d9a7f4dd92818c32c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24bfc7e8c4eb7a96d65838831ee2226e7e380caa")]
 [assembly: System.Reflection.AssemblyProductAttribute("Health_Joy_Backend_Mobile")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Health_Joy_Backend_Mobile")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

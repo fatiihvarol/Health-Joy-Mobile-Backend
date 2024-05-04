@@ -43,11 +43,19 @@ namespace Health_Joy_Backend_Mobile.Controllers
             return await getProductNotApprovedQuery.ExecuteAsync();
 
         }
-        [HttpPut("Approve")]
-        public async Task<ApiResponse> GetProduct(int productId )
+        
+        [HttpGet("GetAllProducts")]
+        public async Task<ApiResponse<List<ProductResponse>>> GetAllProducts()
         {
-            var approveProduct = new UpdateProductCommand(_context);
-            return await approveProduct.ExecuteAsync(productId);
+            var getProductsQuery = new GetAllProducts(_context);
+            return await getProductsQuery.ExecuteAsync();
+
+        }
+        [HttpPut("Approve/{id}")]
+        public async Task<ApiResponse> GetProduct(int id ,ProductRequest request )
+        {
+            var approveProduct = new UpdateProductCommand(_context,request,id);
+            return await approveProduct.Handle();
         }
     }
 }
