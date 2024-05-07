@@ -14,7 +14,16 @@ public class UserRequest
 
 }
 
-public class UserResponse
+public class UpdateUserModel
 {
-    public string FullName { get; set; }
+    public string OldPassword { get; set; }
+    public string NewPassword { get; set; }
+    public string ConfirmPassword { get; set; }
+}
+
+public class LoginResponse
+{
+    public string UserName { get; set; }
+    public string Email { get; set; }
+    public int UserId { get; set; }
 }

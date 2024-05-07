@@ -1,6 +1,9 @@
 using Health_Joy_Mobile_Backend.Data;
 using Health_Joy_Mobile_Backend.Schema;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace Health_Joy_Backend_Mobile.Applications.UserOperations.UpdateUser
 {
@@ -8,13 +11,17 @@ namespace Health_Joy_Backend_Mobile.Applications.UserOperations.UpdateUser
     {
         private readonly AppDbContext _context;
         private readonly int _userId;
-        private readonly UserRequest _userRequest;
+        private readonly string _oldPassword;
+        private readonly string _newPassword;
+        private readonly string _confirmPassword;
 
-        public UpdateUserCommand(AppDbContext context, int userId, UserRequest userRequest)
+        public UpdateUserCommand(AppDbContext context, int userId, string oldPassword, string newPassword, string confirmPassword)
         {
             _context = context;
             _userId = userId;
-            _userRequest = userRequest;
+            _oldPassword = oldPassword;
+            _newPassword = newPassword;
+            _confirmPassword = confirmPassword;
         }
 
         public async Task<IActionResult> Handle()
@@ -25,18 +32,23 @@ namespace Health_Joy_Backend_Mobile.Applications.UserOperations.UpdateUser
                 if (user == null)
                     return new NotFoundResult();
 
-                // Update user properties with values from request
-                user.FullName = _userRequest.FullName;
-                user.Email = _userRequest.Email;
-                user.Password = _userRequest.Password;
+                // Only update password if provided and matches the old password
+                if (!string.IsNullOrEmpty(_newPassword) && 
+                    _newPassword == _confirmPassword && 
+                    _oldPassword == user.Password)
+                {
+                    user.Password = _newPassword;
+                    await _context.SaveChangesAsync();
 
-                await _context.SaveChangesAsync();
+                    return new OkResult();
+                }
+                return new NotFoundResult();
+                
 
-                return new OkResult();
+              
             }
             catch (Exception ex)
             {
-                Console.Error.WriteLine($"Error updating user: {ex}");
                 return new StatusCodeResult(500);
             }
         }

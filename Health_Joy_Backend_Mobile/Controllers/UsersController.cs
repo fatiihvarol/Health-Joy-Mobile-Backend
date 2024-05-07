@@ -8,6 +8,7 @@ using Health_Joy_Backend_Mobile.Applications.UserOperations.GetUserDetail;
 using Health_Joy_Backend_Mobile.Applications.UserOperations.UpdateUser;
 using Health_Joy_Backend_Mobile.Applications.UserOperations.DeleteUser;
 using Health_Joy_Backend_Mobile.Applications.UserOperations.Login;
+using Health_Joy_Backend_Mobile.Common;
 
 namespace Health_Joy_Backend_Mobile.Controllers
 {
@@ -54,7 +55,7 @@ namespace Health_Joy_Backend_Mobile.Controllers
 
 
         [HttpPost("Login")]
-        public async Task<IActionResult> Login(string email, string password)
+        public async Task<ApiResponse<LoginResponse>> Login(string email, string password)
         {
             LoginCommand command = new LoginCommand(_context, email, password);
             return await command.Handle();
@@ -75,10 +76,19 @@ namespace Health_Joy_Backend_Mobile.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateUser(int id, [FromBody] UserRequest userRequest)
+        public async Task<IActionResult> UpdateUser(int id, [FromBody] UpdateUserModel model)
         {
-            UpdateUserCommand command = new UpdateUserCommand(_context, id, userRequest);
-            return await command.Handle();
+            try
+            {
+                UpdateUserCommand command = new UpdateUserCommand(_context, id, model.OldPassword, model.NewPassword, model.ConfirmPassword);
+                return await command.Handle();
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine($"Error updating user: {ex}");
+                return new StatusCodeResult(500);
+            }
         }
+
     }
 }

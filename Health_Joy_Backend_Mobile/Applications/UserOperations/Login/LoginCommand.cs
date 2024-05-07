@@ -1,4 +1,6 @@
+using Health_Joy_Backend_Mobile.Common;
 using Health_Joy_Mobile_Backend.Data;
+using Health_Joy_Mobile_Backend.Schema;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,25 +19,23 @@ namespace Health_Joy_Backend_Mobile.Applications.UserOperations.Login
             _password = password;
         }
 
-        public async Task<IActionResult> Handle()
+        public async Task<ApiResponse<LoginResponse>> Handle()
         {
-            try
-            {
+           
+                LoginResponse response = new LoginResponse();
                 var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == _email && x.Password == _password);
 
                 if (user == null)
-                    return new NotFoundResult();
+                    return new ApiResponse<LoginResponse>(response);
 
-                // Burada başarılı bir giriş olduğunu işaretlemek için başka bir şey döndürebiliriz(TOKEN)
+                response.Email = user.Email;
+                response.UserId = user.UserId;
+                response.UserName = user.FullName;
 
-                //return new OkResult();
-                return new OkObjectResult(user.UserId);
+
+                return new ApiResponse<LoginResponse>(response);
             }
-            catch (Exception ex)
-            {
-                Console.Error.WriteLine($"Error fetching user by id: {ex}");
-                return new StatusCodeResult(500);
-            }
+           
         }
     }
-}
+
