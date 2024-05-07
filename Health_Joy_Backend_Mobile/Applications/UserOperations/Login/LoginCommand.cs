@@ -29,7 +29,7 @@ namespace Health_Joy_Backend_Mobile.Applications.UserOperations.Login
                 // Burada başarılı bir giriş olduğunu işaretlemek için başka bir şey döndürebiliriz(TOKEN)
 
                 //return new OkResult();
-                return new OkObjectResult(user);
+                return new OkObjectResult(user.UserId);
             }
             catch (Exception ex)
             {
