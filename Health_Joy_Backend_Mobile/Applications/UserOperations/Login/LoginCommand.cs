@@ -3,6 +3,9 @@ using Health_Joy_Mobile_Backend.Data;
 using Health_Joy_Mobile_Backend.Schema;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Health_Joy_Backend_Mobile.Applications.UserOperations.Login
 {
@@ -21,21 +24,30 @@ namespace Health_Joy_Backend_Mobile.Applications.UserOperations.Login
 
         public async Task<ApiResponse<LoginResponse>> Handle()
         {
-           
-                LoginResponse response = new LoginResponse();
-                var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == _email && x.Password == _password);
+            LoginResponse response = new LoginResponse();
+            var user = await _context.Users
+                .Include(u => u.Favorites) // Eager loading of Favorites
+                .FirstOrDefaultAsync(x => x.Email == _email && x.Password == _password);
 
-                if (user == null)
-                    return new ApiResponse<LoginResponse>(response);
+            if (user == null)
+                return new ApiResponse<LoginResponse>(response); // User not found
 
-                response.Email = user.Email;
-                response.UserId = user.UserId;
-                response.UserName = user.FullName;
+            response.Email = user.Email;
+            response.UserId = user.UserId;
+            response.UserName = user.FullName;
 
-
-                return new ApiResponse<LoginResponse>(response);
+            if (user.Favorites != null && user.Favorites.Any())
+            {
+                int[] favorites = user.Favorites.Select(f => f.ProductId).ToArray();
+                response.Favorites = favorites;
             }
-           
-        }
-    }
+            else
+            {
+                response.Favorites = Array.Empty<int>(); // Handle if there are no favorites
+            }
 
+            return new ApiResponse<LoginResponse>(response);
+        }
+
+    }
+}
