@@ -31,4 +31,11 @@ public class FavoriteController : ControllerBase
         return await command.Handle();
     }
     
+    [HttpPost("{id}")]
+    public async Task<ApiResponse<List<ProductResponse>>> GetFavorites(int id)
+    {
+        GetUserFavorites command = new GetUserFavorites(_context, id);
+        return await command.ExecuteAsync();
+    }
+    
 }
