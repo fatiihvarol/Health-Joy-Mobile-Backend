@@ -17,10 +17,17 @@ public class FavoriteController : ControllerBase
         _context = context;
     }
     
-    [HttpPost]
-    public async Task<ApiResponse> CreateIngredient(FavoriteRequest request)
+    [HttpPost("Add")]
+    public async Task<ApiResponse> AddFavorite(FavoriteRequest request)
     {
         AddFavoriteCommand command = new AddFavoriteCommand(_context, request);
+        return await command.Handle();
+    }
+    
+    [HttpPost("Remove")]
+    public async Task<ApiResponse> RemoveFavorite(FavoriteRequest request)
+    {
+        RemoveFavoriteCommand command = new RemoveFavoriteCommand(_context, request);
         return await command.Handle();
     }
     
