@@ -9,10 +9,12 @@ namespace Health_Joy_Mobile_Backend.Data.Entity
         public long TotalRiskValue { get; set; }
         public string? ProductType { get; set; }
         public bool IsApprovedByAdmin { get; set; }
-        public int UserId { get; set; }
+        public int? UserId { get; set; }
         public virtual User? User { get; set; }
 
         // Navigation property for many-to-many relationship with Ingredient
         public virtual ICollection<Ingredient> Ingredients { get; set; } = new List<Ingredient>();
+        public virtual ICollection<UserProductFavorite> UserFavorites { get; set; }
+
     }
 }

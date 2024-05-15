@@ -60,7 +60,6 @@ namespace Health_Joy_Backend_Mobile.Applications.ProductOperations.UpdateProduct
                 existingProduct.Description = _productRequest.Description;
                 existingProduct.Ingredients = ingredients;
                 existingProduct.ProductType = _productRequest.ProductType;
-                existingProduct.UserId = _productRequest.UserId;
                 existingProduct.IsApprovedByAdmin = true;
                 existingProduct.TotalRiskValue = averageRiskValue;
 

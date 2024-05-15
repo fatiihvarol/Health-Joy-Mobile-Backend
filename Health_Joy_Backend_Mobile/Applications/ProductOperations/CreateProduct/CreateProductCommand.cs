@@ -63,7 +63,6 @@ namespace Health_Joy_Backend_Mobile.Applications.ProductOperations.CreateProduct
             Description = _productRequest.Description,
             Ingredients = ingredients,
             ProductType = _productRequest.ProductType,
-            UserId = _productRequest.UserId,
             IsApprovedByAdmin = false,
             TotalRiskValue = averageRiskValue
         };

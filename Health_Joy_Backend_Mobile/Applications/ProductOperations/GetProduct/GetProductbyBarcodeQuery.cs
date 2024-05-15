@@ -22,7 +22,7 @@ namespace Health_Joy_Backend_Mobile.Applications.ProductOperations.GetProduct
         {
             var product = await _context.Products
                 .Include(p => p.Ingredients) // Ingredients'ı da Include et
-                .Where(p => p.BarcodeNo.Equals(barcodeNo))
+                .Where(p => p.BarcodeNo.Equals(barcodeNo) && p.IsApprovedByAdmin)
                 .FirstOrDefaultAsync();
 
             if (product is null)
@@ -50,7 +50,6 @@ namespace Health_Joy_Backend_Mobile.Applications.ProductOperations.GetProduct
                 TotalRiskValue = product.TotalRiskValue,
                 ProductType = product.ProductType,
                 IsApprovedByAdmin = product.IsApprovedByAdmin,
-                UserId = product.UserId,
                 Ingredients = ingredientResponses
             };
 

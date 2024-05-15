@@ -22,28 +22,28 @@ namespace Health_Joy_Backend_Mobile.Applications.FavoriteOperations
             try
             {
                 // Retrieve the user by UserId including their favorite products
-                var user = await _context.Users
-                    .Include(u => u.Favorites) // Include the FavoriteProducts collection
-                        .ThenInclude(fp => fp.Ingredients) // Include ingredients for each favorite product if needed
-                    .FirstOrDefaultAsync(u => u.UserId == _userId);
+                var userFavorites = await _context.UserProductFavorites
+                    .Where(upf => upf.UserId == _userId)
+                    .Include(upf => upf.Product) // Include the Product
+                        .ThenInclude(p => p.Ingredients) // Include ingredients for each product if needed
+                    .ToListAsync();
 
-                if (user == null || user.Favorites == null || !user.Favorites.Any())
+                if (userFavorites == null || !userFavorites.Any())
                 {
                     return new ApiResponse<List<ProductResponse>>("No favorite products found for the user");
                 }
 
                 // Map the user's favorite products to ProductResponse objects
-                var favoriteProducts = user.Favorites.Select(fp => new ProductResponse
+                var favoriteProducts = userFavorites.Select(upf => new ProductResponse
                 {
-                    ProductId = fp.ProductId,
-                    BarcodeNo = fp.BarcodeNo,
-                    Name = fp.Name,
-                    Description = fp.Description,
-                    TotalRiskValue = fp.TotalRiskValue,
-                    ProductType = fp.ProductType,
-                    IsApprovedByAdmin = fp.IsApprovedByAdmin,
-                    UserId = fp.UserId,
-                    Ingredients = fp.Ingredients
+                    ProductId = upf.Product.ProductId,
+                    BarcodeNo = upf.Product.BarcodeNo,
+                    Name = upf.Product.Name,
+                    Description = upf.Product.Description,
+                    TotalRiskValue = upf.Product.TotalRiskValue,
+                    ProductType = upf.Product.ProductType,
+                    IsApprovedByAdmin = upf.Product.IsApprovedByAdmin,
+                    Ingredients = upf.Product.Ingredients
                         .Select(ingredient => new IngredientResponse
                         {
                             Name = ingredient.Name,

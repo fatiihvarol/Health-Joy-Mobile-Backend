@@ -49,7 +49,6 @@ namespace Health_Joy_Backend_Mobile.Applications.ProductOperations.GetProduct
                     TotalRiskValue = product.TotalRiskValue,
                     ProductType = product.ProductType,
                     IsApprovedByAdmin = product.IsApprovedByAdmin,
-                    UserId = product.UserId,
                     Ingredients = ingredientResponses
                 };
 

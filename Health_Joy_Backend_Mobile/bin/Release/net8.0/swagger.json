@@ -5,6 +5,137 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Admin/Login": {
+      "post": {
+        "tags": [
+          "Admin"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "email",
+            "type": "string",
+            "collectionFormat": "multi"
+          },
+          {
+            "in": "query",
+            "name": "password",
+            "type": "string",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/Favorite/Add": {
+      "post": {
+        "tags": [
+          "Favorite"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/FavoriteRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/Favorite/Remove": {
+      "post": {
+        "tags": [
+          "Favorite"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/FavoriteRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/Favorite/{id}": {
+      "post": {
+        "tags": [
+          "Favorite"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ProductResponseListApiResponse"
+            }
+          }
+        }
+      }
+    },
     "/api/Ingredient": {
       "get": {
         "tags": [
@@ -31,6 +162,35 @@
             "name": "body",
             "schema": {
               "$ref": "#/definitions/IngredientRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Ingredient/CalculateAverageRiskLevel": {
+      "post": {
+        "tags": [
+          "Ingredient"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
             }
           }
         ],
@@ -108,6 +268,141 @@
         "responses": {
           "200": {
             "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Product/Create": {
+      "post": {
+        "tags": [
+          "Product"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ProductRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Product": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "productBarcode",
+            "type": "string",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ProductResponseApiResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/Product/NotApproved": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ProductResponseListApiResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/Product/GetAllProducts": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ProductResponseListApiResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/Product/Approve/{id}": {
+      "put": {
+        "tags": [
+          "Product"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ProductRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
           }
         }
       }
@@ -208,7 +503,7 @@
             "in": "body",
             "name": "body",
             "schema": {
-              "$ref": "#/definitions/UserRequest"
+              "$ref": "#/definitions/UpdateUserModel"
             }
           }
         ],
@@ -223,6 +518,11 @@
       "post": {
         "tags": [
           "User"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
         ],
         "parameters": [
           {
@@ -240,13 +540,50 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LoginResponseApiResponse"
+            }
           }
         }
       }
     }
   },
   "definitions": {
+    "ApiResponse": {
+      "type": "object",
+      "properties": {
+        "success": {
+          "type": "boolean"
+        },
+        "message": {
+          "type": "string"
+        },
+        "serverDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "referenceNo": {
+          "format": "uuid",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "FavoriteRequest": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "productId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
     "IngredientRequest": {
       "type": "object",
       "properties": {
@@ -259,6 +596,208 @@
         "riskLevel": {
           "format": "int32",
           "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "IngredientRequestCreateProduct": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "IngredientResponse": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "riskLevel": {
+          "format": "int32",
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "LoginResponse": {
+      "type": "object",
+      "properties": {
+        "userName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "userId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "favorites": {
+          "type": "array",
+          "items": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "LoginResponseApiResponse": {
+      "type": "object",
+      "properties": {
+        "serverDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "referenceNo": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "success": {
+          "type": "boolean"
+        },
+        "message": {
+          "type": "string"
+        },
+        "response": {
+          "$ref": "#/definitions/LoginResponse"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ProductRequest": {
+      "type": "object",
+      "properties": {
+        "barcodeNo": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "productType": {
+          "type": "string"
+        },
+        "userId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ingredients": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/IngredientRequestCreateProduct"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "ProductResponse": {
+      "type": "object",
+      "properties": {
+        "productId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "barcodeNo": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "totalRiskValue": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "productType": {
+          "type": "string"
+        },
+        "isApprovedByAdmin": {
+          "type": "boolean"
+        },
+        "userId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ingredients": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/IngredientResponse"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "ProductResponseApiResponse": {
+      "type": "object",
+      "properties": {
+        "serverDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "referenceNo": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "success": {
+          "type": "boolean"
+        },
+        "message": {
+          "type": "string"
+        },
+        "response": {
+          "$ref": "#/definitions/ProductResponse"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ProductResponseListApiResponse": {
+      "type": "object",
+      "properties": {
+        "serverDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "referenceNo": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "success": {
+          "type": "boolean"
+        },
+        "message": {
+          "type": "string"
+        },
+        "response": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProductResponse"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "UpdateUserModel": {
+      "type": "object",
+      "properties": {
+        "oldPassword": {
+          "type": "string"
+        },
+        "newPassword": {
+          "type": "string"
+        },
+        "confirmPassword": {
+          "type": "string"
         }
       },
       "additionalProperties": false

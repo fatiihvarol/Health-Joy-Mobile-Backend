@@ -2,6 +2,6 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ActiveDebugProfile>https</ActiveDebugProfile>
-    <NameOfLastUsedPublishProfile>C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\Properties\PublishProfiles\HealthJoyBackendMobile20240311152807 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>C:\Users\fatih\OneDrive\Masaüstü\final project backend\Health-Joy-Mobile-Backend\Health_Joy_Backend_Mobile\Properties\PublishProfiles\HealthJoyBackendMobile20240515195922 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

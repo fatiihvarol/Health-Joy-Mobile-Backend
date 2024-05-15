@@ -18,8 +18,7 @@ namespace Health_Joy_Backend_Mobile.Applications.UserOperations.GetUsers
             try
             {
                 var users = await _context.Users.ToListAsync();
-                var userViewModels = users.Select(u => new UserViewModel { FullName = u.FullName }).ToList();
-                return new OkObjectResult(userViewModels);
+                return new OkObjectResult(users);
             }
             catch (Exception ex)
             {

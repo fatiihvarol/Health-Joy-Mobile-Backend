@@ -4,6 +4,7 @@ using Health_Joy_Mobile_Backend.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Health_Joy_Backend_Mobile.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240515173321_favoriteupdate")]
+    partial class favoriteupdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -72,6 +75,7 @@ namespace Health_Joy_Backend_Mobile.Migrations
                         .HasColumnType("bigint");
 
                     b.Property<int?>("UserId")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.HasKey("ProductId");
@@ -113,21 +117,6 @@ namespace Health_Joy_Backend_Mobile.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("Health_Joy_Mobile_Backend.Data.Entity.UserProductFavorite", b =>
-                {
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.HasKey("UserId", "ProductId");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("UserProductFavorites");
-                });
-
             modelBuilder.Entity("IngredientProduct", b =>
                 {
                     b.Property<int>("IngredientsIngredientId")
@@ -146,27 +135,10 @@ namespace Health_Joy_Backend_Mobile.Migrations
             modelBuilder.Entity("Health_Joy_Mobile_Backend.Data.Entity.Product", b =>
                 {
                     b.HasOne("Health_Joy_Mobile_Backend.Data.Entity.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("Health_Joy_Mobile_Backend.Data.Entity.UserProductFavorite", b =>
-                {
-                    b.HasOne("Health_Joy_Mobile_Backend.Data.Entity.Product", "Product")
-                        .WithMany("UserFavorites")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Health_Joy_Mobile_Backend.Data.Entity.User", "User")
                         .WithMany("Favorites")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Product");
 
                     b.Navigation("User");
                 });
@@ -184,11 +156,6 @@ namespace Health_Joy_Backend_Mobile.Migrations
                         .HasForeignKey("ProductsProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("Health_Joy_Mobile_Backend.Data.Entity.Product", b =>
-                {
-                    b.Navigation("UserFavorites");
                 });
 
             modelBuilder.Entity("Health_Joy_Mobile_Backend.Data.Entity.User", b =>

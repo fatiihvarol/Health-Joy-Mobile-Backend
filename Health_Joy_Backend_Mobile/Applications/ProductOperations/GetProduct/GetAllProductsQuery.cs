@@ -19,6 +19,7 @@ namespace Health_Joy_Backend_Mobile.Applications.ProductOperations.GetProduct
         {
             var products = await _context.Products
                 .Include(p => p.Ingredients)
+                .Where(x => x.IsApprovedByAdmin == true && x.IsApprovedByAdmin)
                 .ToListAsync();
 
             if (products.Count == 0)
@@ -48,7 +49,6 @@ namespace Health_Joy_Backend_Mobile.Applications.ProductOperations.GetProduct
                     TotalRiskValue = product.TotalRiskValue,
                     ProductType = product.ProductType,
                     IsApprovedByAdmin = product.IsApprovedByAdmin,
-                    UserId = product.UserId,
                     Ingredients = ingredientResponses
                 };
 
