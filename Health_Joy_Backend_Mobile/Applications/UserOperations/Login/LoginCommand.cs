@@ -30,7 +30,7 @@ namespace Health_Joy_Backend_Mobile.Applications.UserOperations.Login
                 .FirstOrDefaultAsync(x => x.Email == _email && x.Password == _password);
 
             if (user == null)
-                return new ApiResponse<LoginResponse>(response); // User not found
+                return new ApiResponse<LoginResponse>("not found"); // User not found
 
             response.Email = user.Email;
             response.UserId = user.UserId;

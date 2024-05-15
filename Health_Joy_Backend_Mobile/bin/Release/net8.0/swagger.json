@@ -686,10 +686,6 @@
         "productType": {
           "type": "string"
         },
-        "userId": {
-          "format": "int32",
-          "type": "integer"
-        },
         "ingredients": {
           "type": "array",
           "items": {
